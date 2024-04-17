@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Modern font */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Center items vertically */
+            height: 100vh; /* Full viewport height */
+            background-image: url('bg1.png'); /* Set background image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+        
+        .container {
+            text-align: left; /* Align the heading and form to the left */
+            width: 100%; /* Ensure the container takes full width */
+            max-width: 400px; /* Limit the maximum width of the container */
+        }
+        
+        h1 {
+            color: white; /* Set text color to white */
+            text-shadow: 2px 2px 4px #000000; /* Add shadow for better contrast */
+            margin-bottom: 20px; /* Add space below the heading */
+        }
+        
+        form {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Soft shadow */
+            margin-top: 20px; /* Add space above the form */
+        }
+        
+        input[type="file"] {
+            margin-bottom: 10px; /* Spacing below the file input */
+        }
+        
+        button {
+            background-color: #8a3a8d; /* Green background */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload CSV for Analysis</h1>
+        <form action="http://localhost:8000/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv">
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>

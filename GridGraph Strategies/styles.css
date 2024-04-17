@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+    justify-content: space-around; /* This will space out the plots within each row */
+    align-items: center; /* This will align the plots vertically */
+}
+
+.plot {
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: calc(50% - 22px); /* 50% of the container width minus the margin */
+    height: auto;
+}
+header{
+    text-align: center;
+}

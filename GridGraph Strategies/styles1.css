@@ -1,0 +1,69 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background-image: url('background1.png'); /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-;
+    align-items: center;
+    text-align: center;
+    color: black;
+    height: 100vh; /* Viewport height */
+    padding: 20px;
+}
+
+.container {
+    background-color:  #D9D9D957; /* Semi-transparent overlay */
+    padding: 50px;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+.logo {
+    max-width: 100px; /* Adjust as necessary */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.cta-button {
+    background-color: #4CAF50; /* Adjust the color to match the design */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+}
